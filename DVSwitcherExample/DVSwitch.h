@@ -18,6 +18,8 @@
 @property (nonatomic) CGFloat cornerRadius; // defaults to 12
 @property (nonatomic) CGFloat sliderOffset; // slider offset from background, top, bottom, left, right
 
+@property (nonatomic) NSInteger selectedIndex;
+
 + (instancetype)switchWithStringsArray:(NSArray *)strings;
 - (instancetype)initWithStringsArray:(NSArray *)strings;
 - (instancetype)initWithAttributedStringsArray:(NSArray *)strings;
