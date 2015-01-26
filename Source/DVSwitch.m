@@ -20,8 +20,6 @@
 @property (strong, nonatomic) UIView *backgroundView;
 @property (strong, nonatomic) UIView *sliderView;
 
-@property (nonatomic) NSInteger selectedIndex;
-
 @end
 
 @implementation DVSwitch
@@ -46,6 +44,8 @@
 - (instancetype)initWithStringsArray:(NSArray *)strings
 {
     self = [super init];
+
+    self.selectedIndex = DVSwitchStateNone;
     
     self.strings = strings;
     self.cornerRadius = 12.0f;

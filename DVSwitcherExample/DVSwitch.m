@@ -20,8 +20,6 @@
 @property (strong, nonatomic) UIView *backgroundView;
 @property (strong, nonatomic) UIView *sliderView;
 
-@property (nonatomic) NSInteger selectedIndex;
-
 @end
 
 @implementation DVSwitch

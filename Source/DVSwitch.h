@@ -10,6 +10,12 @@
 
 @interface DVSwitch : UIControl
 
+typedef NS_ENUM(NSInteger, DVSwitchState) {
+    DVSwitchStateNone = -1,
+    DVSwitchStateLeft = 0,
+    DVSwitchStateRight = 1
+};
+
 @property (strong, nonatomic) UIColor *backgroundColor; // defaults to gray
 @property (strong, nonatomic) UIColor *sliderColor; // defaults to white
 @property (strong, nonatomic) UIColor *labelTextColorInsideSlider; // defaults to black
@@ -17,6 +23,8 @@
 @property (strong, nonatomic) UIFont *font; // default is nil
 @property (nonatomic) CGFloat cornerRadius; // defaults to 12
 @property (nonatomic) CGFloat sliderOffset; // slider offset from background, top, bottom, left, right
+
+@property (nonatomic) NSInteger selectedIndex;
 
 + (instancetype)switchWithStringsArray:(NSArray *)strings;
 - (instancetype)initWithStringsArray:(NSArray *)strings;
